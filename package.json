@@ -1,0 +1,66 @@
+{
+  "name": "Propeller",
+  "description": "Front-end Framework based on Material Design With Bootstrap",
+  "version": "1.0.0",
+  "homepage": "http://pro.propeller.in/",
+  "author": "Digicorp, Inc",
+  "license": "UNLICENSED",
+  "main": "dist/js/propeller.js",
+  "keywords": [
+    "css",
+    "mobile-first",
+    "bootstrap4",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "scripts": {
+    "test": "npm run eslint && grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digicorp/propeller/"
+  },
+  "bugs": {
+    "url": "https://github.com/digicorp/propeller/issues"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compress": "~0.14.0",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-copy": "~0.8.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-node-sass": "^1.0.1",
+    "grunt-npm-install": "^0.3.1",
+    "grunt-processhtml": "^0.4.1",
+    "grunt-sass": "^2.1.0",
+    "grunt-stamp": "^0.3.0",
+    "load-grunt-tasks": "~3.3.0"
+  },
+  "engines": {
+    "node": ">=0.10.1"
+  },
+  "jspm": {
+    "main": "js/propeller",
+    "shim": {
+      "js/propeller": {
+        "deps": "jquery",
+        "exports": "$"
+      }
+    },
+    "files": [
+      "css",
+      "fonts",
+      "js"
+    ]
+  },
+  "dependencies": {
+    "grunt-cli": "^1.3.1"
+  }
+}
